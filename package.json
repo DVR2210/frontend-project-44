@@ -4,18 +4,26 @@
   "type": "module",
   "description": "[![Actions Status](https://github.com/DVR2210/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/DVR2210/frontend-project-44/actions)",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
-  "main": "index.js",
+  "main": "user-hello.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": { 
+    
     "lodash": "^4.17.21",
     "make": "^0.8.1",
     "makefile": "^0.0.2",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
