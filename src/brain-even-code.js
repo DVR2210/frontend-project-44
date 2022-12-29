@@ -1,5 +1,5 @@
- import rendomNamber from '../rendom-function.js'; 
- import userHello from '../base-function/user-hello.js';
+ import rendomNamber from './src/helper.js'; 
+ import userHello from './src/index.js';
  
  const rulesGame = 'Answer "yes" if the number is even, otherwise answer "no".'; // ПравелаИгры
 
@@ -17,6 +17,6 @@
 
  function brainEvent() { // созд. новую функцию БрейнЕвенст с пердаем в нее функцию ЮсерХеллоу с двумя аргументами
   userHello(rulesGame, gameRendom);
- }
+ }; 
 
  export default brainEvent; // эекспорт текущей функции текущего файла

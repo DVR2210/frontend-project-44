@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import questionUserName from '../src/base-function/cli.js';
+import questionUserName from '../src/cli.js';
 
 
 questionUserName();

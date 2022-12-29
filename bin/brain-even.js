@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import brainEvent from "../src/games/brain-even-code";
+import brainEvent from './src/brain-even-code.js';
 
 
 brainEvent();
