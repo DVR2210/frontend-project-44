@@ -1,5 +1,5 @@
- import rendomNamber from './src/helper.js'; 
- import userHello from './src/index.js';
+ import rendomNamber from '../helper.js';  
+ import userHello from '../index.js';
  
  const rulesGame = 'Answer "yes" if the number is even, otherwise answer "no".'; // ПравелаИгры
 
