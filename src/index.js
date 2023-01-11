@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync'; // импорт из библиоте�
 
 const gameLevel = 3; // колл этераций игры
 
-
 function userHello(gameMessage, nextlavel) { // gameMessage (questionGame из функций) nextlavel - арг нов уровня 
 
   console.log('Welcome to the Brain Games!');
@@ -12,11 +11,11 @@ function userHello(gameMessage, nextlavel) { // gameMessage (questionGame из �
 
   for (let raundGame = 0; raundGame < gameLevel; raundGame += 1) { // счечки этераций до 3 
 
-  const [questionGame, possibleAnswer] = nextlavel(); // передаем 2 арг questionGame и possibleAnswer из файл BrEvCo
+  const [questionGame, correctAnswer] = nextlavel(); // передаем 2 арг questionGame и possibleAnswer из файл BrEvCo
   console.log(`Question: ${questionGame}`); // игра задет вопрос
   const playerAnswer = readlineSync.question('Your answer: '); // ответ игрока обрабатывается readlineSync
    
-  if (playerAnswer !== possibleAnswer) { // епроверка ксли ответ не верный
+  if (playerAnswer !== correctAnswer) { // епроверка ксли ответ не верный
     console.log(`${name} is wrong answer!\n Lets try again.`);
     return;  
   }

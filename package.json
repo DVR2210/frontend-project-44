@@ -15,7 +15,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": { 
-    
     "lodash": "^4.17.21",
     "make": "^0.8.1",
     "makefile": "^0.0.2",

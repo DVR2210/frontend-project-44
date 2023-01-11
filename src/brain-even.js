@@ -8,11 +8,11 @@
 
   const gameRendom = () => {
 
-  const questionGame = rendomNamber(1, 10); // созд.перменнйо с ипортируемой функцией 
+  const questionGame = rendomNamber(1, 10); // констатнта которая реалтзует рендомное число 
   
-  const possibleAnswer = examinationNamber(questionGame) ? 'yas' : 'no'; // сзд.перменню с варантами ответов
+  const correctAnswer = examinationNamber(questionGame) ? 'yas' : 'no'; // сзд.перменню с варантами ответов
   
-  return [questionGame, possibleAnswer]; // возврат двух перменных
+  return [questionGame, correctAnswer]; // возврат двух перменных
  };
 
 
