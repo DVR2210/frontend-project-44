@@ -13,18 +13,18 @@ function userHello(gameMessage, nextlavel) { // gameMessage (questionGame из �
   for (let raundGame = 0; raundGame < gameLevel; raundGame += 1) { // счечки этераций до 3 
 
   const [questionGame, possibleAnswer] = nextlavel(); // передаем 2 арг questionGame и possibleAnswer из файл BrEvCo
-  console.log(`'Question: ${questionGame}'`); // игра задет вопрос
+  console.log(`Question: ${questionGame}`); // игра задет вопрос
   const playerAnswer = readlineSync.question('Your answer: '); // ответ игрока обрабатывается readlineSync
    
   if (playerAnswer !== possibleAnswer) { // епроверка ксли ответ не верный
-    console.log(`'${name}' is wrong answer!\n Lets try again.`);
+    console.log(`${name} is wrong answer!\n Lets try again.`);
     return;  
   }
   
   console.log('Correct!');
 
 }
-console.log(`Congratulations, ${name}!`) 
+console.log(`Congratulations, ${name}!`);
 
 };
 export default userHello;
