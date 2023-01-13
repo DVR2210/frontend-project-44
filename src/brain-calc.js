@@ -9,8 +9,8 @@ const randomElement = arr[Math.floor(Math.random() * arr.length)]; // полч �
 const firstNamber = rendomNamber(0, 50); // полчаем рендомное первое число
 const secondNamber = rendomNamber(0, 50); // получаем рендомное второе число
 
-const calculate = (operator, firstNamber, secondNamber) => { // вугкция сложения первого ив торго числа
-  switch (operator) {
+const calculate = (randomElement, firstNamber, secondNamber) => { // вугкция сложения первого ив торго числа
+  switch (randomElement) {
     case '+': 
       return firstNamber + secondNamber;
     case '-':
@@ -27,8 +27,8 @@ const gameRendom = () => {
   const firstNamber = rendomNamber(0, 50); // полчаем рендомное первое число
   const secondNamber = rendomNamber(0, 50); // получаем рендомное второе число
 
-  return [`${firstNamber}${randomElement}${secondNamber}`, 
-  String(calculate(operator, firstNamber, secondNamber))]
+  return [`${firstNamber} ${randomElement} ${secondNamber}`, String(calculate(randomElement, firstNamber, secondNamber))];
+  
 };
 
 function brainCalc() {
