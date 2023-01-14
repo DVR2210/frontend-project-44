@@ -12,10 +12,11 @@ const gameRendom = () => {
   const questionGame = `${firstNamber} ${secondNamber}`; 
 
   const correctAnswer = (firstNamber, secondNamber) => {
-  if (secondNamber > firstNamber) return NOD(secondNamber, firstNamber);
+  if (secondNamber > firstNamber) return correctAnswer (secondNamber, firstNamber);
   if (!secondNamber) return firstNamber;
   return correctAnswer (secondNamber, firstNamber % secondNamber);
   };
+
   return [questionGame, correctAnswer]; 
 };
 
