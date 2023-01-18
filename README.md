@@ -22,6 +22,15 @@ The player needs to answer "yes" if the number is even and "no" if it's not.
 
 [![asciicast](https://asciinema.org/a/rEBVewAir6dyj9D5H6CtCIA1x.svg)](https://asciinema.org/a/rEBVewAir6dyj9D5H6CtCIA1x)
 
+### brain-сalc
+game launch:
+```
+brain-calc
+```
+The player must find the result of the expression.
+
+[![asciicast](https://asciinema.org/a/EanOlerxhNwemWdjdRpVOGSNS.svg)](https://asciinema.org/a/EanOlerxhNwemWdjdRpVOGSNS)
+
 ### brain-gcd
 game launch:
 ```
@@ -29,7 +38,7 @@ brain-gcd
 ```
 The player needs to find the greatest common divisor of the given numbers.
 
-[![asciicast](https://asciinema.org/a/EanOlerxhNwemWdjdRpVOGSNS.svg)](https://asciinema.org/a/EanOlerxhNwemWdjdRpVOGSNS)
+[![asciicast](https://asciinema.org/a/kDBOcxls9T8Qvxs3rFzQlRMpd.svg)](https://asciinema.org/a/kDBOcxls9T8Qvxs3rFzQlRMpd)
 
 ### brain-prime
 game launch:
