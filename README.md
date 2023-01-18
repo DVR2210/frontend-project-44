@@ -38,7 +38,7 @@ brain-prime
 ```
 The player needs to answer "yes" if the given number is prime. Otherwise, answer "no".
 
-[![asciicast](.svg)]()
+[![asciicast](https://asciinema.org/a/8382t6q0ESbpGZSDaZEzezxI0.svg)](https://asciinema.org/a/8382t6q0ESbpGZSDaZEzezxI0)
 
 ### brain-progression
 game launch:
@@ -47,4 +47,4 @@ brain-progression
 ```
 The player needs to find what number is missing in the progression.
 
-[![asciicast](.svg)]()
+[![asciicast](https://asciinema.org/a/vlYyZd4z27VuW7fVki0Af3GWe.svg)](https://asciinema.org/a/vlYyZd4z27VuW7fVki0Af3GWe)
