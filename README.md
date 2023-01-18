@@ -20,4 +20,4 @@ brain-even
 ```
 The player needs to answer "yes" if the number is even and "no" if it's not.
 
-[![asciicast].(https://asciinema.org/a/rEBVewAir6dyj9D5H6CtCIA1x.svg).].(https://asciinema.org/a/rEBVewAir6dyj9D5H6CtCIA1x)
+[![asciicast](https://asciinema.org/a/rEBVewAir6dyj9D5H6CtCIA1x.svg)](https://asciinema.org/a/rEBVewAir6dyj9D5H6CtCIA1x)
