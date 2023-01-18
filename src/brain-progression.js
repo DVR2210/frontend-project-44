@@ -19,17 +19,19 @@ const getProgression = () => {
   }
   return array;
 };
-const getQuestionAndAnswer = () => {
+const gameRendom = () => {
   const progression = getProgression();
   const index = getRandomNum(1, progression.length - 1);
   const rightAnswer = progression[index];
   progression[index] = '..';
+  const correctAnswer = String(rightAnswer); 
   const question = progression.join(' ');
-  return [question, rightAnswer ];
+  
+  return [question, correctAnswer];dd
 };
 
 function brainProgression() {
-  userHello(rulesGame, getQuestionAndAnswer);
+  userHello(rulesGame, gameRendom);
 };
 
 export default brainProgression; 
