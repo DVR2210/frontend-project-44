@@ -21,3 +21,30 @@ brain-even
 The player needs to answer "yes" if the number is even and "no" if it's not.
 
 [![asciicast](https://asciinema.org/a/rEBVewAir6dyj9D5H6CtCIA1x.svg)](https://asciinema.org/a/rEBVewAir6dyj9D5H6CtCIA1x)
+
+### brain-gcd
+game launch:
+```
+brain-gcd
+```
+The player needs to find the greatest common divisor of the given numbers.
+
+[![asciicast](https://asciinema.org/a/EanOlerxhNwemWdjdRpVOGSNS.svg)](https://asciinema.org/a/EanOlerxhNwemWdjdRpVOGSNS)
+
+### brain-prime
+game launch:
+```
+brain-prime
+```
+The player needs to answer "yes" if the given number is prime. Otherwise, answer "no".
+
+[![asciicast](.svg)]()
+
+### brain-progression
+game launch:
+```
+brain-progression
+```
+The player needs to find what number is missing in the progression.
+
+[![asciicast](.svg)]()
