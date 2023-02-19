@@ -16,7 +16,7 @@ function userHello(gameMessage, nextlavel) {
   const playerAnswer = readlineSync.question('Your answer: '); 
    
   if (playerAnswer !== correctAnswer) { 
-    console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}\n Let's try again, ${name}.`);
+    console.log(`${playerAnswer} is wrong answer; (. Correct answer was ${correctAnswer}\n Let's try again, ${name}!`);
     return;  
   }
   
