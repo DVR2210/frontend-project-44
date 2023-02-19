@@ -1,15 +1,15 @@
-import rendomNamber from './helper.js';   
-import userHello from './index.js'; 
+import rendomNamber from '../helper.js';   
+import userHello from '../index.js'; 
 
-const rulesGame = 'Find the greatest common divisor of given numbers.'; // правило игры 
+const rulesGame = 'Find the greatest common divisor of given numbers.'; 
 
-const getGcd = (firstNamber, secondNamber) => { // функция возвращает наибольший делитель - рабоатет 
+const getGcd = (firstNamber, secondNamber) => { 
   if (secondNamber > firstNamber) return getGcd(secondNamber, firstNamber);
   if (!secondNamber) return firstNamber;
   return getGcd(secondNamber, firstNamber % secondNamber);
   };
 
-const gameRendom = () => {
+const getQuestionAndAnswer = () => {
 
   const firstNamber = rendomNamber(0, 50); 
   const secondNamber = rendomNamber(0, 50);
@@ -21,7 +21,7 @@ const gameRendom = () => {
 };
 
 function brainCalc() {
-  userHello(rulesGame, gameRendom);
+  userHello(rulesGame, getQuestionAndAnswer);
 };
 
 export default brainCalc; 

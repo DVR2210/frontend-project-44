@@ -1,21 +1,21 @@
-import readlineSync from 'readline-sync'; // импорт из библиотеки - модуль помгает выводить сообщения
+import readlineSync from 'readline-sync'; 
 
-const gameLevel = 3; // колл этераций игры
+const gameLevel = 3; 
 
-function userHello(gameMessage, nextlavel) { // gameMessage (questionGame из функций) nextlavel - арг нов уровня 
+function userHello(gameMessage, nextlavel) { 
 
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May i heve your name?');
   console.log(`Hello, ${name}!`);
-  console.log(gameMessage); // перадем из функций коснту questionGame
+  console.log(gameMessage); 
 
-  for (let raundGame = 0; raundGame < gameLevel; raundGame += 1) { // счечки этераций до 3 
+  for (let raundGame = 0; raundGame < gameLevel; raundGame += 1) { 
 
-  const [questionGame, correctAnswer] = nextlavel(); // передаем 2 арг questionGame и possibleAnswer из файл BrEvCo
-  console.log(`Question: ${questionGame}`); // игра задет вопрос
-  const playerAnswer = readlineSync.question('Your answer: '); // ответ игрока обрабатывается readlineSync
+  const [questionGame, correctAnswer] = nextlavel(); 
+  console.log(`Question: ${questionGame}`); 
+  const playerAnswer = readlineSync.question('Your answer: '); 
    
-  if (playerAnswer !== correctAnswer) { // епроверка ксли ответ не верный
+  if (playerAnswer !== correctAnswer) { 
     console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}\n Lets try again ${name}.`);
     return;  
   }

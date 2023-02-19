@@ -1,4 +1,4 @@
-import userHello from './index.js'; 
+import userHello from '../index.js'; 
 
 const rulesGame = 'What number is missing in the progression?';
 
@@ -19,7 +19,7 @@ const getProgression = () => {
   }
   return array;
 };
-const gameRendom = () => {
+const getQuestionAndAnswer = () => {
   const progression = getProgression();
   const index = getRandomNum(1, progression.length - 1);
   const rightAnswer = progression[index];
@@ -27,11 +27,11 @@ const gameRendom = () => {
   const correctAnswer = String(rightAnswer); 
   const question = progression.join(' ');
   
-  return [question, correctAnswer];dd
+  return [question, correctAnswer];
 };
 
 function brainProgression() {
-  userHello(rulesGame, gameRendom);
+  userHello(rulesGame, getQuestionAndAnswer);
 };
 
 export default brainProgression; 
