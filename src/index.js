@@ -5,7 +5,7 @@ const gameLevel = 3;
 function userHello(gameMessage, nextlavel) { 
 
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May i heve your name?');
+  const name = readlineSync.question('May I have your name?');
   console.log(`Hello, ${name}!`);
   console.log(gameMessage); 
 
