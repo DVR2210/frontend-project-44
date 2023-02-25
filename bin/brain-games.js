@@ -2,6 +2,5 @@
 
 import questionUserName from '../src/cli.js';
 
-
 questionUserName();
 
