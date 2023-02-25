@@ -10,13 +10,11 @@ const getGcd = (firstNamber, secondNamber) => {
   };
 
 const getQuestionAndAnswer = () => {
-
   const firstNamber = rendomNamber(0, 50); 
   const secondNamber = rendomNamber(0, 50);
   const questionGame = `${firstNamber} ${secondNamber}`; 
   const correct = getGcd(firstNamber,secondNamber);
   const correctAnswer = String(correct);
-    
   return [questionGame, correctAnswer]; 
 };
 
@@ -25,5 +23,3 @@ function brainCalc() {
 };
 
 export default brainCalc; 
-
-

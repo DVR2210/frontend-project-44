@@ -19,7 +19,6 @@ const getQuestionAndAnswer = () => {
   return [questionGame, correctAnswer];
 };
 
-
 function brainPrime() {
   userHello(rulesGame, getQuestionAndAnswer);
 };
