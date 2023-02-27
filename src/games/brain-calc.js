@@ -26,6 +26,6 @@ const getQuestionAndAnswer = () => {
 
 function brainCalc() {
   userHello(rulesGame, getQuestionAndAnswer);
-};
+}
 
 export default brainCalc;

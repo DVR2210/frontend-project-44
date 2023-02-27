@@ -27,8 +27,9 @@ const getQuestionAndAnswer = () => {
   const question = progression.join(' ');
   return [question, correctAnswer];
 };
+
 function brainProgression() {
   userHello(rulesGame, getQuestionAndAnswer);
-};
+}
 
 export default brainProgression;

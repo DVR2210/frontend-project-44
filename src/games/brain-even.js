@@ -12,6 +12,6 @@
 
  function brainEvent() {
   userHello(rulesGame, getQuestionAndAnswer);
- };
+ }
 
  export default brainEvent;

@@ -21,6 +21,6 @@ const getQuestionAndAnswer = () => {
 
 function brainPrime() {
   userHello(rulesGame, getQuestionAndAnswer);
-};
+}
 
 export default brainPrime;
