@@ -1,5 +1,6 @@
 import rendomNamber from '../helper.js';
 import userHello from '../index.js';
+
 const rulesGame = 'What is the result of the expression?';
 const arr = ['+', '-', '*'];
 const calculate = (randomElement, firstNamber, secondNamber) => {
