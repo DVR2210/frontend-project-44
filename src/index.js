@@ -1,7 +1,5 @@
 import readlineSync from 'readline-sync'; 
-
 const gameLevel = 3; 
-
 function userHello(gameMessage, nextlavel) { 
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
@@ -19,5 +17,4 @@ function userHello(gameMessage, nextlavel) {
 }
 console.log(`Congratulations, ${name}!`);
 };
-
 export default userHello;
