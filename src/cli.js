@@ -6,4 +6,4 @@ function welcome() {
   console.log(` Hello, ${name}!`);
 };
 
-export default welcome; 
+export default welcome;

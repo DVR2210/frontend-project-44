@@ -1,4 +1,4 @@
-import userHello from '../index.js'; 
+import userHello from '../index.js';
 
 const rulesGame = 'What number is missing in the progression?';
 
@@ -23,7 +23,7 @@ const getQuestionAndAnswer = () => {
   const index = getRandomNum(1, progression.length - 1);
   const rightAnswer = progression[index];
   progression[index] = '..';
-  const correctAnswer = String(rightAnswer); 
+  const correctAnswer = String(rightAnswer);
   const question = progression.join(' ');
   return [question, correctAnswer];
 };
