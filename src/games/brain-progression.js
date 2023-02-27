@@ -1,7 +1,6 @@
 import userHello from '../index.js';
 
 const rulesGame = 'What number is missing in the progression?';
-
 const getRandomNum = (min, max) => {
   const minNum = Math.ceil(min);
   const maxNum = Math.floor(max);
@@ -27,9 +26,7 @@ const getQuestionAndAnswer = () => {
   const question = progression.join(' ');
   return [question, correctAnswer];
 };
-
 function brainProgression() {
   userHello(rulesGame, getQuestionAndAnswer);
 }
-
 export default brainProgression;
