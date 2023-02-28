@@ -3,9 +3,9 @@ import userHello from '../index.js';
 
 const rulesGame = 'Find the greatest common divisor of given numbers.';
 const getGcd = (firstNamber, secondNamber) => {
-   if (secondNamber > firstNamber) return getGcd(secondNamber, firstNamber);
-   if (!secondNamber) return firstNamber;
-   return getGcd(secondNamber, firstNamber % secondNamber);
+  if (secondNamber > firstNamber) return getGcd(secondNamber, firstNamber);
+  if (!secondNamber) return firstNamber;
+  return getGcd(secondNamber, firstNamber % secondNamber);
   };
 const getQuestionAndAnswer = () => {
    const firstNamber = rendomNamber(0, 50);
