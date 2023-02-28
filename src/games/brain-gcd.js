@@ -12,8 +12,8 @@ const getQuestionAndAnswer = () => {
   const secondNamber = rendomNamber(0, 50);
   const questionGame = `${firstNamber} ${secondNamber}`;
   const correct = getGcd(firstNamber,secondNamber); 
-   const correctAnswer = String(correct);
-   return [questionGame, correctAnswer];
+  const correctAnswer = String(correct);
+  return [questionGame, correctAnswer];
 };
 function brainCalc() {
   userHello(rulesGame, getQuestionAndAnswer);
