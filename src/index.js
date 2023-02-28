@@ -9,7 +9,7 @@ function userHello(gameMessage, nextlavel) {
   console.log(gameMessage);
 
   for (let raundGame = 0; raundGame < gameLevel; raundGame += 1) {
-    onst [questionGame, correctAnswer] = nextlavel();
+    сonst [questionGame, correctAnswer] = nextlavel();
     console.log(`Question: ${questionGame}`);
     const playerAnswer = readlineSync.question('Your answer: ');
     if (playerAnswer !== correctAnswer) {
