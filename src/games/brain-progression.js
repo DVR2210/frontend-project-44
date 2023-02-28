@@ -8,7 +8,7 @@ const getRandomNum = (min, max) => {
 };
 const getProgression = () => {
   let begin = getRandomNum(1, 15);
-  const end = getRandomNum(50, 90);
+  const end = getRandomNum(10, 80);
   const step = getRandomNum(3, 10);
   const array = [];
   while (begin <= end) {

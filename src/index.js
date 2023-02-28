@@ -17,9 +17,7 @@ function userHello(gameMessage, nextlavel) {
       return;
     }
     console.log('Correct!');
-
   }
   console.log(`Congratulations, ${name}!`);
-   
 }
 export default userHello;
