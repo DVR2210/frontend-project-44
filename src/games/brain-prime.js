@@ -11,7 +11,7 @@ const isPrime = (num) => {
   return true;
 };
 const getQuestionAndAnswer = () => {
-  const rendomNum = rendomNamber(2,100);
+  const rendomNum = rendomNamber(2, 100);
   const questionGame = `${rendomNum}`;
   const correctAnswer = isPrime(rendomNum) ? 'yes' : 'no';
   return [questionGame, correctAnswer];
