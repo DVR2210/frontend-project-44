@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+
 const gameLevel = 3;
 
 function userHello(gameMessage, nextlavel) {

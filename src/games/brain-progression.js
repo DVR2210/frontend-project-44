@@ -7,7 +7,7 @@ const getRandomNum = (min, max) => {
   return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
 };
 const getProgression = () => {
-  let begin = getRandomNum(1,15);
+  let begin = getRandomNum(1, 15);
   const end = getRandomNum(50, 90);
   const step = getRandomNum(3, 10);
   const array = [];
