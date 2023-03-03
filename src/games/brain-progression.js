@@ -1,31 +1,40 @@
 import userHello from '../index.js';
 
 const rulesGame = 'What number is missing in the progression?';
-const getRandomNum = (min, max) => {
-  const minNum = Math.ceil(min);
-  const maxNum = Math.floor(max);
-  return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
-};
-const getProgression = () => {
-  let begin = getRandomNum(1, 15);
-  const end = getRandomNum(10, 80);
-  const step = getRandomNum(3, 10);
-  const array = [];
-  while (begin <= end) {
-    array.push(begin);
-    begin += step;
+
+const minNum = 1;
+const maxNum = 50;
+
+const getRandomNum  = (min = minNum, max = maxNum) => Math.floor(Math.random() * (max - min)) + min;
+const getRandIndex = (data) => Math.floor(Math.random() * data.length);
+
+const minLength = 5;
+const maxLength = 10;
+const minStep = 1;
+const maxStep = 10;
+const minRange = 1;
+const maxRange = 50;
+
+const getProgression = (progressionLength, progressionStep, progressionRange) => {
+  const arrProgression = [];
+  for (let i = progressionRange; arrProgression.length < progressionLength; i += progressionStep) {
+    arrProgression.push(i);
   }
-  return array;
+  return arrProgression;
 };
+
 const getQuestionAndAnswer = () => {
-  const progression = getProgression();
-  const index = getRandomNum(1, progression.length - 1);
-  const rightAnswer = progression[index];
-  progression[index] = '..';
-  const correctAnswer = String(rightAnswer);
+  const progressionLength = getRandomNum (minLength, maxLength);
+  const progressionStep = getRandomNum (minStep, maxStep);
+  const progressionRange = getRandomNum (minRange, maxRange);
+  const progression = getProgression(progressionLength, progressionStep, progressionRange);
+  const hiddenIndex = getRandIndex(progression);
+  const correctAnswer = String(progression[hiddenIndex]);
+  progression[hiddenIndex] = '..';
   const question = progression.join(' ');
   return [question, correctAnswer];
 };
+
 function brainProgression() {
   userHello(rulesGame, getQuestionAndAnswer);
 }
