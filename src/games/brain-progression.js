@@ -5,7 +5,7 @@ const rulesGame = 'What number is missing in the progression?';
 const minNum = 1;
 const maxNum = 50;
 
-const getRandomNum  = (min = minNum, max = maxNum) => Math.floor(Math.random() * (max - min)) + min;
+const getRandomNum = (min = minNum, max = maxNum) => Math.floor(Math.random() * (max - min)) + min;
 const getRandIndex = (data) => Math.floor(Math.random() * data.length);
 
 const minLength = 5;
@@ -24,9 +24,9 @@ const getProgression = (progressionLength, progressionStep, progressionRange) =>
 };
 
 const getQuestionAndAnswer = () => {
-  const progressionLength = getRandomNum (minLength, maxLength);
-  const progressionStep = getRandomNum (minStep, maxStep);
-  const progressionRange = getRandomNum (minRange, maxRange);
+  const progressionLength = getRandomNum(minLength, maxLength);
+  const progressionStep = getRandomNum(minStep, maxStep);
+  const progressionRange = getRandomNum(minRange, maxRange);
   const progression = getProgression(progressionLength, progressionStep, progressionRange);
   const hiddenIndex = getRandIndex(progression);
   const correctAnswer = String(progression[hiddenIndex]);
