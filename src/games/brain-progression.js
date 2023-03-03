@@ -38,4 +38,5 @@ const getQuestionAndAnswer = () => {
 function brainProgression() {
   userHello(rulesGame, getQuestionAndAnswer);
 }
+
 export default brainProgression;
